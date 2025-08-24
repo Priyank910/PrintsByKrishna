@@ -1,0 +1,51 @@
+:root {
+  --dark-blue: #384B70;
+  --muted-blue: #507687;
+  --cream: #FCFAEE;
+  --accent: #B8001F;
+  --gold: #D4AF37;
+}
+
+body.bg-cream { background-color: var(--cream); }
+.text-darkblue { color: var(--dark-blue) !important; }
+.bg-accent { background-color: var(--accent) !important; }
+
+.btn-accent {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.6rem 1.2rem;
+  box-shadow: 0 6px 16px rgba(184,0,31,0.2);
+}
+.btn-accent:hover { filter: brightness(0.95); }
+
+.btn-outline-darkblue {
+  border: 1.5px solid var(--dark-blue);
+  color: var(--dark-blue);
+  border-radius: 1rem;
+}
+.btn-outline-darkblue:hover {
+  background-color: var(--dark-blue);
+  color: #fff;
+}
+
+.subtle-shadow { box-shadow: 0 4px 20px rgba(56,75,112,0.06); }
+.card-elevated { box-shadow: 0 12px 30px rgba(56,75,112,0.08); background: #fff; }
+.hero-card { background: linear-gradient(135deg, #ffffff, #fff6f6); }
+a { text-decoration: none; }
+
+/* Image utilities */
+.object-fit-cover { object-fit: cover; }
+
+/* Table */
+.table > :not(caption) > * > * { background-color: transparent; }
+
+/* Form */
+.form-control, .form-select, .btn { border-radius: 0.8rem; }
+
+/* Badges or small accents */
+.badge-gold {
+  background-color: var(--gold);
+  color: #1b1b1b;
+}
